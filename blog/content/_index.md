@@ -1,13 +1,14 @@
 ---
 title: "Vai e Vem | Aluguel de Decoração"
+
 # Profile settings
-profileImage: "images/logo.jpg" # path under static/
+profileImage: "images/logo.jpg"
 name: "Vai e Vem | Aluguel 🐝"
 description: "✨ Loja especializada em aluguel de objetos decorativos. Aqui você pode alugar decorações para festas intimistas e eventos diversos!! ✨ Sua festa está aqui ✨"
 
 # Link cards
 links:
-  - href: "https://buymeacoffee.com/you"
+  - href: "https://vaievemaluguel.estoquenow.site/"
     icon: "fas fa-podcast"
     title: "Alugue pelo site"
     description: "https://vaievemaluguel.estoquenow.site/"
@@ -23,5 +24,4 @@ links:
     icon: "fab fa-whatsapp"
     title: "Atendimento e orçamentos"
     description: "(96) 9 8126-0219"
-#  REMOVE "How to Customize This Page" section by removing the line "{{ partial "Instructions.html" . }}" in index.html file under layouts/
 ---
