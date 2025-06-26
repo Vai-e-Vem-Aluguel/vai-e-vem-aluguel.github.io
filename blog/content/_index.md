@@ -15,7 +15,7 @@ links:
   - href: "https://www.instagram.com/vaievemaluguel/"
     icon: "fab fa-instagram"
     title: "Vitrine Virtual"
-    description: "vaievemaluguel"
+    description: "@vaievemaluguel"
   - href: "https://maps.app.goo.gl/cEhfeAdRETH73ErL9?g_st=ic"
     icon: "fas fa-globe"
     title: "Como chegar na loja"
