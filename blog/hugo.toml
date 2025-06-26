@@ -1,0 +1,12 @@
+baseURL = "https://vai-e-vem-aluguel.github.io/"
+languageCode = "pt-br"
+title = "Vai e Vem Aluguel - Contato"
+theme = "LucentLink-Hugo"
+minVersion = "0.115.0"
+
+[params]
+  description     = "Entre em contato conosco."
+
+[outputs]
+  home = ["HTML"]
+
