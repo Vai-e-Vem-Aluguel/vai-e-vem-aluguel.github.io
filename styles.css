@@ -1,0 +1,252 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffcc0000 0%, #ffcc0025 50%, #ffcc0042 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.bee-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bee-logo-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+}
+
+.bee-logo-circle img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.link-card {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.link-card:hover::before {
+    left: 100%;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.link-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.link-content {
+    flex: 1;
+}
+
+.link-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.link-content p {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+.link-arrow {
+    color: #bdc3c7;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.link-card:hover .link-arrow {
+    color: #2c3e50;
+    transform: translateX(5px);
+}
+
+/* Link Card Colors */
+.instagram .link-icon {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.whatsapp .link-icon {
+    background: #25d366;
+}
+
+.cart .link-icon {
+    background: #f39c12;
+}
+
+.maps .link-icon {
+    background: #e74c3c;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.honeycomb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.footer p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .links-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .link-card {
+        padding: 20px;
+    }
+    
+    .link-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    
+    .bee {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .bee-wings {
+        width: 70px;
+        height: 25px;
+    }
+    
+    .wing {
+        width: 30px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .link-card {
+        padding: 15px;
+    }
+    
+    .link-content h3 {
+        font-size: 1rem;
+    }
+    
+    .link-content p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Remove old bee drawing styles */
+.bee, .bee-body, .bee-stripe, .bee-wings, .wing, .bee-antennae, .antenna {
+    display: none !important;
+} 
